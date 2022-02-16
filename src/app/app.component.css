@@ -1,0 +1,36 @@
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    padding: 25px;
+}
+.formDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.headingspace{
+    padding-left: 100px;
+}
+.contactbook{
+    width: 400px;
+    border-style: groove;
+    padding: 10px;
+    padding-bottom: 50px;   
+    
+}
+
+.body {
+    border-style: groove;
+}
+
+.addcontactbtn {
+    background-color: lawngreen;
+    border-radius: 10px;
+}

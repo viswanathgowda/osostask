@@ -1,0 +1,22 @@
+<div>
+    <div class="contactbookheading">
+        <h4>Phone Numbers</h4>
+        <button (click)="clearDataMethod()">clear All</button>
+    </div>
+    <table>
+        <tr>
+            <th>S.No -</th>
+            <th>Name -</th>
+            <th>Mobile Number -</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let e of contactDetails; let i = index">
+            <td>{{i + 1}}</td>
+            <td scope="row">{{e.name}}</td>
+            <td scope="row">{{e.phoneNumber}}</td>
+            <td scope="row"><button class="edit" (click)="edit(e)">Edit</button></td>
+            <td scope="row"><button class="delete" (click)="delete(e)">Delete</button></td>
+        </tr>
+    </table>
+</div>
+<!-- <h2>{{registreddetails.name}} {{registreddetails.phoneNumber}}</h2> -->
