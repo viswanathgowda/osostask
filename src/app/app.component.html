@@ -17,7 +17,7 @@
       </form>
       <button class="addcontactbtn" [disabled]="registration.status=='INVALID'" (click)="addcontact()">ADD Contact</button>
   </div>
-  <div class="contactbook">
+  <div class="contactbook"> 
     <app-contactbook [contactDetails]="registreddata" (clearData)="clearAllContacts()" (editData)="editContact($event)" (deleteData)="deleteContact($event)" >
     </app-contactbook>
   </div>
